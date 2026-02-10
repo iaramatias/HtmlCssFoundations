@@ -1,0 +1,6 @@
+.container-duplo{display:flex;max-width: 1000px;margin: 0 auto;}
+.coluna{flex:1; padding: 20px}
+.coluna:first-child {border-right: 2px solid #ccc;}
+.principal{color:rgb(255, 70, 101);text-align: center}
+.principal::after{content:"🎀";}
+.principal::before{content:"🎀";}

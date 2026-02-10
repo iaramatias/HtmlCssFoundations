@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Introdução HTML</title>
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="principal">Introdução HTML por Iara Matias </h1>
+  </header>
+  <main class="container-duplo">
+     <div class="coluna">
+       <h2>Introdução para Estudante de Programação</h2>
+       <p class="principal">**** Porque estudar HTML ****</p>
+       <p>Para dominar o HTML e construir uma base sólida para o seu futuro no PHP e no Git, você precisa entender que ele não é apenas uma lista de comandos, mas a linguagem de marcação que define o significado e a estrutura da web.</p>
+       <p>Aqui está um guia detalhado do que vamos estudar:</p>
+       <ul>
+          <li>A Mentalidade de "Caixas" (Estrutura e Hierarquia)</li>
+          <li>Anatomia de uma Tag e Atributos</li>
+          <li>Semântica: O "Cérebro" do HTML</li>
+          <li>O Coração da Integração: Formulários</li>
+          <li>Caminhos de Arquivo (Relativo vs. Absoluto)</li>  
+       </ul>
+       <h3>1. A Mentalidade de "Caixas" (Estrutura e Hierarquia)</h3>
+       <p>Tudo no HTML é uma "caixa". Uma tag abre, contém algo e fecha. Entender a hierarquia é fundamental para não "quebrar" o site quando você começar a inserir lógica PHP no meio.</p>
+       <p>Tags de Bloco (block): Ocupam toda a largura da linha (ex: &lt;div&gt;, &lt;h1&gt;,&lt;p&gt;, &lt;ul&gt;)</p>
+       <p>Tags de Linha (inline): Ocupam apenas o espaço do conteúdo (ex:&lt;a&gt;,&lt;span&gt;,&lt;strong&gt;)</p>
+       <p>Aninhamento: Você nunca deve cruzar tags. O correto é fechar a última que abriu primeiro:&lt;div&gt;&lt;p&gt;Texto&lt;/p&gt;&lt;/div&gt;</p>
+       <h3>2. Anatomia de uma Tag e Atributos</h3>
+       <p>As tags podem ter "instruções extras" chamadas atributos.</p>
+       <ul>
+          <li>id: Um identificador único para um elemento (como um CPF).</li>
+          <li>class: Um identificador para vários elementos (como uma farda de escola).</li>
+          <li>src e href: Atributos de origem e destino (essenciais para imagens e links).</li>
+          <li>style: Onde você coloca o CSS diretamente na tag (estilo inline), como você fez para centralizar o texto.</li>
+        </ul>  
+        <h3>3. Semântica: O "Cérebro" do HTML</h3>
+        <p>Hoje em dia, não basta o site "parecer" certo; ele precisa "falar" o que é. Usar as tags corretas ajuda o Google (SEO) e tecnologias assistivas para cegos.</p>
+        <p>Em vez de usar &lt;div&gt; para tudo, use:</p>
+        <ul>
+           <li>&lt;header&gt; para o topo.</li>
+           <li>&lt;nav&gt; para menus de navegação.</li>
+           <li>&lt;main&gt; para o conteúdo principal.</li>
+           <li>&lt;footer&gt; para o rodapé.</li>
+           <li>&lt;section&gt; e &lt;article&gt; para blocos de conteúdo.</li>
+        </ul>
+     </div>
+     <div class="coluna">
+        <h3>4. O Coração da Integração: Formulários (&lt;form&gt;)</h3>
+        <p>Como você quer aprender PHP, esta é a parte mais importante. O HTML coleta os dados, e o PHP os processa. Você deve dominar:</p>
+        <ul>
+           <li>Atributo action: Para qual arquivo PHP os dados serão enviados.</li>
+           <li>Atributo method: GET (dados na URL) ou POST (dados escondidos/seguros).</li>
+           <li>Tipos de Input: text, password, email, submit, checkbox.</li>
+           <li>O Atributo name: Sem o name, o PHP não consegue "pescar" o valor que o usuário digitou.</li>
+        </ul>
+        <h3>5. Caminhos de Arquivo (Relativo vs. Absoluto)</h3>
+        <p>Você precisa entender como o navegador localiza as coisas.</p>
+        <ul>
+           <li>Caminho Absoluto: Um link completo da internet (https://google.com).</li>
+           <li>Caminho Relativo: Onde o arquivo está em relação ao seu index.html.</li>
+           <li>imagem.jpg (está na mesma pasta).</li>
+           <li>fotos/perfil.jpg (está dentro de uma pasta chamada fotos).</li>
+        </ul>
+        <h3>6. O que o HTML NÃO faz (Limitações)</h3>
+        <ul>
+           <li>HTML define O QUE é o conteúdo (Estrutura).</li>
+           <li>CSS define COMO ele aparece (Estética/Beleza).</li>
+           <li>PHP define O QUE ELE FAZ (Inteligência/Banco de Dados).</li>
+           <li>Git define COMO ELE É SALVO (Histórico/Versões).</li>
+        </ul>
+     </div> 
+  </main>
+  <footer>...</footer>
+</body>
+   </html>
